@@ -7,7 +7,7 @@
 #                   <https://typeof.net/Iosevka/customizer>                    #
 
 ################################################################################
-# Sans-Serif Variants                                                          #
+# Sans-Serif Variants
 ################################################################################
 
 [buildPlans.iosevka-term-custom]
@@ -20,8 +20,9 @@ no-cv-ss = false
 capital-d = "more-rounded-serifless"
 g = "double-storey"
 l = "tailed-serifed"
-asterisk = "penta-low"
 bar = "force-upright"
+lig-neq = "slightly-slanted-dotted"
+asterisk = "hex-low"
 
 [buildPlans.iosevka-term-custom.weights.regular]
 shape = 400
@@ -45,8 +46,8 @@ no-cv-ss = false
 capital-d = "more-rounded-serifless"
 g = "double-storey"
 l = "tailed-serifed"
-asterisk = "penta-low"
 bar = "force-upright"
+asterisk = "hex-low"
 
 [buildPlans.iosevka-fixed-custom.weights.regular]
 shape = 400
@@ -58,109 +59,110 @@ shape = 700
 menu = 700
 css = 700
 
-################################################################################
+#################################################################################
 
-[buildPlans.iosevka-fixed-latex]
-family = "Iosevka Fixed LaTeX"
-spacing = "fixed"
-serifs = "sans"
-no-cv-ss = false
+#[buildPlans.iosevka-fixed-latex]
+#family = "Iosevka Fixed LaTeX"
+#spacing = "fixed"
+#serifs = "sans"
+#no-cv-ss = false
+#
+#[buildPlans.iosevka-fixed-latex.variants.design]
+#capital-d = "more-rounded-serifless"
+#g = "double-storey"
+#l = "tailed-serifed"
+#bar = "force-upright"
+#ascii-single-quote = "raised-comma"
+#ascii-grave = "raised-inverse-comma"
+#asterisk = "hex-low"
+#
+#[buildPlans.iosevka-fixed-latex.weights.regular]
+#shape = 400
+#menu = 400
+#css = 400
+#
+#[buildPlans.iosevka-fixed-latex.weights.bold]
+#shape = 700
+#menu = 700
+#css = 700
 
-[buildPlans.iosevka-fixed-latex.variants.design]
-capital-d = "more-rounded-serifless"
-g = "double-storey"
-l = "tailed-serifed"
-asterisk = "penta-low"
-bar = "force-upright"
-ascii-single-quote = "raised-comma"
-ascii-grave = "raised-inverse-comma"
+#################################################################################
+## Slab-Serif Variants                                                          #
+#################################################################################
 
-[buildPlans.iosevka-fixed-latex.weights.regular]
-shape = 400
-menu = 400
-css = 400
+#[buildPlans.iosevka-slab-term-custom]
+#family = "Iosevka Slab Term Custom"
+#spacing = "term"
+#serifs = "slab"
+#no-cv-ss = false
+#
+#[buildPlans.iosevka-slab-term-custom.variants.design]
+#capital-d = "more-rounded-serifless"
+#g = "double-storey"
+#l = "tailed-serifed"
+#bar = "force-upright"
+#lig-neq = "slightly-slanted-dotted"
+#asterisk = "hex-low"
+#
+#[buildPlans.iosevka-slab-term-custom.weights.regular]
+#shape = 400
+#menu = 400
+#css = 400
+#
+#[buildPlans.iosevka-slab-term-custom.weights.bold]
+#shape = 700
+#menu = 700
+#css = 700
 
-[buildPlans.iosevka-fixed-latex.weights.bold]
-shape = 700
-menu = 700
-css = 700
+#################################################################################
 
-################################################################################
-# Slab-Serif Variants                                                          #
-################################################################################
+# [buildPlans.iosevka-slab-fixed-custom]
+# family = "Iosevka Slab Fixed Custom"
+# spacing = "fixed"
+# serifs = "slab"
+# no-cv-ss = false
+# 
+# [buildPlans.iosevka-slab-fixed-custom.variants.design]
+# capital-d = "more-rounded-serifless"
+# g = "double-storey"
+# l = "tailed-serifed"
+# bar = "force-upright"
+# asterisk = "hex-low"
+# 
+# [buildPlans.iosevka-slab-fixed-custom.weights.regular]
+# shape = 400
+# menu = 400
+# css = 400
+# 
+# [buildPlans.iosevka-slab-fixed-custom.weights.bold]
+# shape = 700
+# menu = 700
+# css = 700
 
-[buildPlans.iosevka-slab-term-custom]
-family = "Iosevka Slab Term Custom"
-spacing = "term"
-serifs = "slab"
-no-cv-ss = false
+#################################################################################
 
-[buildPlans.iosevka-slab-term-custom.variants.design]
-capital-d = "more-rounded-serifless"
-g = "double-storey"
-l = "tailed-serifed"
-asterisk = "penta-low"
-bar = "force-upright"
-
-[buildPlans.iosevka-slab-term-custom.weights.regular]
-shape = 400
-menu = 400
-css = 400
-
-[buildPlans.iosevka-slab-term-custom.weights.bold]
-shape = 700
-menu = 700
-css = 700
-
-################################################################################
-
-[buildPlans.iosevka-slab-fixed-custom]
-family = "Iosevka Slab Fixed Custom"
-spacing = "fixed"
-serifs = "slab"
-no-cv-ss = false
-
-[buildPlans.iosevka-slab-fixed-custom.variants.design]
-capital-d = "more-rounded-serifless"
-g = "double-storey"
-l = "tailed-serifed"
-asterisk = "penta-low"
-bar = "force-upright"
-
-[buildPlans.iosevka-slab-fixed-custom.weights.regular]
-shape = 400
-menu = 400
-css = 400
-
-[buildPlans.iosevka-slab-fixed-custom.weights.bold]
-shape = 700
-menu = 700
-css = 700
-
-################################################################################
-
-[buildPlans.iosevka-slab-fixed-latex]
-family = "Iosevka Slab Fixed LaTeX"
-spacing = "fixed"
-serifs = "slab"
-no-cv-ss = false
-
-[buildPlans.iosevka-slab-fixed-latex.variants.design]
-capital-d = "more-rounded-serifless"
-g = "double-storey"
-l = "tailed-serifed"
-asterisk = "penta-low"
-bar = "force-upright"
-ascii-single-quote = "raised-comma"
-ascii-grave = "raised-inverse-comma"
-
-[buildPlans.iosevka-slab-fixed-latex.weights.regular]
-shape = 400
-menu = 400
-css = 400
-
-[buildPlans.iosevka-slab-fixed-latex.weights.bold]
-shape = 700
-menu = 700
-css = 700
+#[buildPlans.iosevka-slab-fixed-latex]
+#family = "Iosevka Slab Fixed LaTeX"
+#spacing = "fixed"
+#serifs = "slab"
+#no-cv-ss = false
+#
+#[buildPlans.iosevka-slab-fixed-latex.variants.design]
+#capital-d = "more-rounded-serifless"
+#g = "double-storey"
+#l = "tailed-serifed"
+#bar = "force-upright"
+#ascii-single-quote = "raised-comma"
+#ascii-grave = "raised-inverse-comma"
+#asterisk = "hex-low"
+#
+#[buildPlans.iosevka-slab-fixed-latex.weights.regular]
+#shape = 400
+#menu = 400
+#css = 400
+#
+#[buildPlans.iosevka-slab-fixed-latex.weights.bold]
+#shape = 700
+#menu = 700
+#css = 700
 
