@@ -17,12 +17,15 @@ serifs = "sans"
 no-cv-ss = false
 
 [buildPlans.iosevka-term-custom.variants.design]
-capital-d = "more-rounded-serifless"
+capital-q = "crossing-curly-tailed"
 g = "double-storey"
 l = "tailed-serifed"
+asterisk = "hex-low"
+underscore = "above-baseline"
+caret = "low"
+ampersand = "upper-open"
 bar = "force-upright"
 lig-neq = "slightly-slanted-dotted"
-asterisk = "hex-low"
 
 [buildPlans.iosevka-term-custom.weights.regular]
 shape = 400
@@ -43,11 +46,15 @@ serifs = "sans"
 no-cv-ss = false
 
 [buildPlans.iosevka-fixed-custom.variants.design]
-capital-d = "more-rounded-serifless"
+capital-q = "crossing-curly-tailed"
 g = "double-storey"
 l = "tailed-serifed"
-bar = "force-upright"
 asterisk = "hex-low"
+underscore = "above-baseline"
+caret = "low"
+ampersand = "upper-open"
+bar = "force-upright"
+lig-neq = "slightly-slanted-dotted"
 
 [buildPlans.iosevka-fixed-custom.weights.regular]
 shape = 400

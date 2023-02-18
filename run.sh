@@ -64,7 +64,7 @@ fi
 
 echo "Building version ${FONT_VERSION}"
 npm install
-npm run build -- "$BUILD_PARAM"
+npm run build -- --jCmd=8 "$BUILD_PARAM"
 
 # Copy the dist folder back to the mounted volume
 cp -r dist /build/
