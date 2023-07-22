@@ -10,179 +10,68 @@
 # Sans-Serif Variants
 ################################################################################
 
-#[buildPlans.iosevka-term-custom]
-#family = "Iosevka Term Custom"
-#spacing = "term"
-#serifs = "sans"
-#no-cv-ss = false
-#export-glyph-names = false
-#
-#[buildPlans.iosevka-term-custom.variants.design]
-#capital-q = "crossing-curly-tailed"
-#g = "double-storey"
-#l = "tailed-serifed"
-#asterisk = "penta-low"
-#underscore = "above-baseline"
-#pilcrow = "low"
-#caret = "low"
-#ampersand = "upper-open"
-#bar = "force-upright"
-#lig-neq = "slightly-slanted-dotted"
-#
-#[buildPlans.iosevka-term-custom.variants.italic]
-#g = "single-storey-serifless"
-#k = "cursive-serifless"
-#q = "diagonal-tailed"
-#
-#[buildPlans.iosevka-term-custom.weights.regular]
-#shape = 400
-#menu = 400
-#css = 400
-#
-#[buildPlans.iosevka-term-custom.weights.bold]
-#shape = 700
-#menu = 700
-#css = 700
-
-################################################################################
-
-[buildPlans.iosevka-fixed-custom]
-family = "Iosevka Fixed Custom"
-spacing = "fixed"
+[buildPlans.iosevka-term]
+family = "Iosevka Term"
+spacing = "term"
 serifs = "sans"
 no-cv-ss = false
+export-glyph-names = false
 
-[buildPlans.iosevka-fixed-custom.variants.design]
-capital-q = "crossing-curly-tailed"
+[buildPlans.iosevka-term.variants.design]
 g = "double-storey"
-l = "tailed-serifed"
+l = "serifed-flat-tailed"
 asterisk = "penta-low"
 underscore = "above-baseline"
-pilcrow = "low"
-caret = "low"
 ampersand = "upper-open"
 bar = "force-upright"
 lig-neq = "slightly-slanted-dotted"
 
-[buildPlans.iosevka-fixed-custom.variants.italic]
-g = "single-storey-serifless"
-k = "cursive-serifless"
-q = "diagonal-tailed"
+[buildPlans.iosevka-term.ligations]
+inherits = "default-calt"
+disables = ['eqeq', 'exeq']     # Disables '==', '===', '!=', '!==' ligations
 
-[buildPlans.iosevka-fixed-custom.weights.regular]
+[buildPlans.iosevka-term.variants.italic]
+g = "single-storey-serifless"
+q = "diagonal-tailed-serifless"
+
+[buildPlans.iosevka-term.weights.regular]
 shape = 400
 menu = 400
 css = 400
 
-[buildPlans.iosevka-fixed-custom.weights.bold]
+[buildPlans.iosevka-term.weights.bold]
 shape = 700
 menu = 700
 css = 700
 
-#################################################################################
+################################################################################
 
-#[buildPlans.iosevka-fixed-latex]
-#family = "Iosevka Fixed LaTeX"
-#spacing = "fixed"
-#serifs = "sans"
-#no-cv-ss = false
-#
-#[buildPlans.iosevka-fixed-latex.variants.design]
-#capital-d = "more-rounded-serifless"
-#g = "double-storey"
-#l = "tailed-serifed"
-#bar = "force-upright"
-#ascii-single-quote = "raised-comma"
-#ascii-grave = "raised-inverse-comma"
-#asterisk = "hex-low"
-#
-#[buildPlans.iosevka-fixed-latex.weights.regular]
-#shape = 400
-#menu = 400
-#css = 400
-#
-#[buildPlans.iosevka-fixed-latex.weights.bold]
-#shape = 700
-#menu = 700
-#css = 700
+[buildPlans.iosevka-fixed]
+family = "Iosevka Fixed"
+spacing = "fixed"
+serifs = "sans"
+no-cv-ss = false
+export-glyph-names = false
 
-#################################################################################
-## Slab-Serif Variants                                                          #
-#################################################################################
+[buildPlans.iosevka-fixed.variants.design]
+g = "double-storey"
+l = "serifed-flat-tailed"
+asterisk = "penta-low"
+underscore = "above-baseline"
+ampersand = "upper-open"
+bar = "force-upright"
+lig-neq = "slightly-slanted-dotted"
 
-#[buildPlans.iosevka-slab-term-custom]
-#family = "Iosevka Slab Term Custom"
-#spacing = "term"
-#serifs = "slab"
-#no-cv-ss = false
-#
-#[buildPlans.iosevka-slab-term-custom.variants.design]
-#capital-d = "more-rounded-serifless"
-#g = "double-storey"
-#l = "tailed-serifed"
-#bar = "force-upright"
-#lig-neq = "slightly-slanted-dotted"
-#asterisk = "hex-low"
-#
-#[buildPlans.iosevka-slab-term-custom.weights.regular]
-#shape = 400
-#menu = 400
-#css = 400
-#
-#[buildPlans.iosevka-slab-term-custom.weights.bold]
-#shape = 700
-#menu = 700
-#css = 700
+[buildPlans.iosevka-fixed.variants.italic]
+g = "single-storey-serifless"
+q = "diagonal-tailed-serifless"
 
-#################################################################################
+[buildPlans.iosevka-fixed.weights.regular]
+shape = 400
+menu = 400
+css = 400
 
-# [buildPlans.iosevka-slab-fixed-custom]
-# family = "Iosevka Slab Fixed Custom"
-# spacing = "fixed"
-# serifs = "slab"
-# no-cv-ss = false
-#
-# [buildPlans.iosevka-slab-fixed-custom.variants.design]
-# capital-d = "more-rounded-serifless"
-# g = "double-storey"
-# l = "tailed-serifed"
-# bar = "force-upright"
-# asterisk = "hex-low"
-#
-# [buildPlans.iosevka-slab-fixed-custom.weights.regular]
-# shape = 400
-# menu = 400
-# css = 400
-#
-# [buildPlans.iosevka-slab-fixed-custom.weights.bold]
-# shape = 700
-# menu = 700
-# css = 700
-
-#################################################################################
-
-#[buildPlans.iosevka-slab-fixed-latex]
-#family = "Iosevka Slab Fixed LaTeX"
-#spacing = "fixed"
-#serifs = "slab"
-#no-cv-ss = false
-#
-#[buildPlans.iosevka-slab-fixed-latex.variants.design]
-#capital-d = "more-rounded-serifless"
-#g = "double-storey"
-#l = "tailed-serifed"
-#bar = "force-upright"
-#ascii-single-quote = "raised-comma"
-#ascii-grave = "raised-inverse-comma"
-#asterisk = "hex-low"
-#
-#[buildPlans.iosevka-slab-fixed-latex.weights.regular]
-#shape = 400
-#menu = 400
-#css = 400
-#
-#[buildPlans.iosevka-slab-fixed-latex.weights.bold]
-#shape = 700
-#menu = 700
-#css = 700
-
+[buildPlans.iosevka-fixed.weights.bold]
+shape = 700
+menu = 700
+css = 700

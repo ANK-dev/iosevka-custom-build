@@ -64,7 +64,11 @@ fi
 
 echo "Building version ${FONT_VERSION}"
 npm install
-npm run build -- --jCmd=8 "$BUILD_PARAM"
+
+# `--jCmd` specifies the number of parallel build threads; a high number might
+# cause the build to fail due to an out-of-memory condition
+npm run build -- --jCmd=8 "$BUILD_PARAM" 
 
 # Copy the dist folder back to the mounted volume
 cp -r dist /build/
+

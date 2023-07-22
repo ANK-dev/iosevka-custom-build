@@ -1,4 +1,3 @@
-FROM ubuntu
 # Original: https://gist.github.com/tasuten/0431d8af3e7b5ad5bc5347ce2d7045d7
 # https://github.com/ejuarezg/containers/blob/master/iosevka_font/Dockerfile
 
@@ -8,7 +7,7 @@ FROM ubuntu
 #     -v ./build:/build \
 #     iosevka_build
 
-#FROM debian:buster-slim
+FROM ubuntu
 
 ARG OTFCC_VER=0.10.4
 ARG PREMAKE_VER=5.0.0-alpha15
@@ -47,3 +46,4 @@ COPY run.sh /run.sh
 
 WORKDIR /build
 ENTRYPOINT ["/bin/bash", "/run.sh"]
+
