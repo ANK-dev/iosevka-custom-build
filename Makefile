@@ -15,10 +15,10 @@ nerdttf: dockerimage
 		# Builds only TTF variants: (Hinted and Unhinted)
 		docker run --rm -it -v $$(pwd):/build iosevka-custom-build ttf::$$plan
 
-		if [ $$? -ne 0 ]; then
-			# Patches font with nerdpatcher for Nerd Fonts symbols
+		if [ $$? -eq 0 ]; then
+			# Patches font with nerdpatcher for Nerd Font symbols
 			echo
-			echo "Adding Nerd Fonts symbols for $$plan"
+			echo "Adding Nerd Font symbols for $$plan"
 			docker run --rm --pull=always -v $$ttfdir:/in -v $$ttfdir/nerdpatch:/out nerdfonts/patcher -cs --progressbars --careful
 		fi
 
@@ -55,3 +55,4 @@ clean:
 cleanall: dockerimage
 	sudo rm -rf dist/
 	docker rmi -f iosevka-custom-build:latest
+
