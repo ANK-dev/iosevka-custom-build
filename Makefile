@@ -7,13 +7,13 @@ SHELL := /bin/bash
 # Each plan present in the `private-build-plans.toml` will be included in this array
 PLANS := $(shell grep -oP '(?<=(?<!#|# )\[buildPlans\.)(?:\w|-+)*(?=])' private-build-plans.toml)
 
-nerdttf: dockerimage
+nerdttf: dockerimage 
 	for plan in $(PLANS); do
-		ttfdir="$$(pwd)/dist/$$plan/ttf"
+		ttfdir="$$(pwd)/dist/$$plan/TTF"
 
 		echo "Building $$plan..."
 		# Builds only TTF variants: (Hinted and Unhinted)
-		docker run --rm -it -v $$(pwd):/build iosevka-custom-build ttf::$$plan
+		docker run --rm -it -v $$(pwd):/build ankdev0/iosevka-custom-build ttf::$$plan
 
 		if [ $$? -eq 0 ]; then
 			# Patches font with nerdpatcher for Nerd Font symbols
@@ -24,18 +24,18 @@ nerdttf: dockerimage
 
 	done
 
-ttf: dockerimage
+ttf: dockerimage private-build-plans.toml
 	for plan in $(PLANS); do
 		echo "Building $$plan..."
 		# Builds only TTF variants: (Hinted and Unhinted)
-		docker run --rm -it -v $$(pwd):/build iosevka-custom-build ttf::$$plan
+		docker run --rm -it -v $$(pwd):/build ankdev0/iosevka-custom-build ttf::$$plan
 	done
 
-all: dockerimage
+all: dockerimage private-build-plans.toml
 	for plan in $(PLANS); do
 		echo "Building $$plan..."
 		# Builds only TTF variants: (Hinted and Unhinted)
-		docker run --rm -it -v $$(pwd):/build iosevka-custom-build contents::$$plan
+		docker run --rm -it -v $$(pwd):/build ankdev0/iosevka-custom-build contents::$$plan
 	done
 
 dockerimage:
@@ -45,8 +45,8 @@ dockerimage:
 		exit 1;
 	fi
 
-	if [ "$$(docker images -q iosevka-custom-build:latest 2> /dev/null)" = "" ]; then
-		docker build -t iosevka-custom-build:latest ./dockerfiles/
+	if [ "$$(docker images -q ankdev0/iosevka-custom-build:latest 2> /dev/null)" = "" ]; then
+		docker build -t ankdev0/iosevka-custom-build:latest ./docker
 	fi
 
 clean:
@@ -54,5 +54,5 @@ clean:
 
 cleanall: dockerimage
 	sudo rm -rf dist/
-	docker rmi -f iosevka-custom-build:latest
+	docker rmi -f ankdev0/iosevka-custom-build:latest
 

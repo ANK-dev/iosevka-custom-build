@@ -7,7 +7,7 @@ ARG OTFCC_VER=0.10.4
 ARG PREMAKE_VER=5.0.0-alpha15
 
 # Base Packages
-RUN pacman -Syu --noconfirm --needed git base-devel jq file curl ca-certificates nodejs-lts-hydrogen npm
+RUN pacman -Syu --noconfirm --needed git base-devel jq file curl ca-certificates nodejs-lts-iron npm
     
 # Premake
 WORKDIR /tmp
@@ -42,7 +42,8 @@ RUN echo 'build ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 USER build
 
 WORKDIR /home/build
-RUN gpg --keyserver pgp.mit.edu --recv-keys C1A60EACE707FDA5
+#RUN gpg --keyserver pgp.mit.edu --recv-keys C1A60EACE707FDA5
+RUN gpg --keyserver hkps://keys.openpgp.org/ --recv-keys C1A60EACE707FDA5
 RUN git clone https://aur.archlinux.org/ttfautohint.git
 
 WORKDIR /home/build/ttfautohint
